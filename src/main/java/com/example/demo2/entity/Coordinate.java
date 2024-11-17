@@ -13,6 +13,8 @@ public class Coordinate {
     private Double lat; // 위도
     private Double lng; // 경도
 
+    private String userId; // 사용자 ID
+
     @ManyToOne
     @JoinColumn(name = "polyline_id", nullable = false)
     private Polyline polyline; // Polyline 참조
