@@ -14,4 +14,7 @@ public class Polyline {
 
     @OneToMany(mappedBy = "polyline", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Coordinate> coordinates; // 좌표 리스트
+
+    @Column(nullable = false)
+    private String title; // 제목 필드 추가
 }
